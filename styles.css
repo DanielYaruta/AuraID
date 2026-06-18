@@ -168,7 +168,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .brand__id {
   display: flex;
@@ -1065,10 +1065,19 @@ body {
 /* ============ Адаптив header ============ */
 .brand {
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 720px) {
+  .header-clock { display: none; }
 }
 
 @media (max-width: 460px) {
-  .header-clock { display: none; }
   .lang-btn { padding: 4px 7px; font-size: 0.7rem; }
+}
+
+@media (max-width: 380px) {
+  .brand { flex-wrap: wrap; row-gap: 8px; }
+  .lang-switcher { gap: 2px; padding: 3px; }
+  .lang-btn { padding: 4px 6px; font-size: 0.65rem; }
 }
