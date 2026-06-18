@@ -168,6 +168,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  flex-wrap: wrap;
 }
 .brand__id {
   display: flex;
@@ -177,6 +178,11 @@ body {
   font-size: 1.3rem;
   letter-spacing: 0.01em;
   color: var(--ink);
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
 }
 .brand__mark {
   display: inline-flex;
@@ -215,7 +221,8 @@ body {
   height: 38px;
   border-radius: 10px;
   border: 1.5px solid var(--line);
-  background: var(--card);
+  background: color-mix(in srgb, var(--card) 90%, transparent);
+  backdrop-filter: blur(8px);
   color: var(--ink-soft);
   cursor: pointer;
 }
@@ -1007,6 +1014,11 @@ body {
   display: flex;
   gap: 4px;
   align-items: center;
+  background: color-mix(in srgb, var(--card) 80%, transparent);
+  backdrop-filter: blur(8px);
+  padding: 4px;
+  border-radius: 24px;
+  border: 1px solid var(--line);
 }
 
 .lang-btn {
@@ -1015,7 +1027,7 @@ body {
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 20px;
-  border: 1.5px solid var(--line);
+  border: 1.5px solid transparent;
   background: transparent;
   color: var(--ink-soft);
   cursor: pointer;
@@ -1043,6 +1055,11 @@ body {
   color: var(--ink-soft);
   white-space: nowrap;
   letter-spacing: 0.01em;
+  background: color-mix(in srgb, var(--card) 80%, transparent);
+  backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
 }
 
 /* ============ Адаптив header ============ */
