@@ -84,7 +84,12 @@ body {
       var(--accent-soft) 0%,
       transparent 55%
     ),
-    var(--paper);
+    linear-gradient(
+      180deg,
+      rgba(8, 7, 14, 0.78) 0%,
+      rgba(8, 7, 14, 0.66) 100%
+    ),
+    url("bg.jpg") center center / cover no-repeat fixed;
   background-attachment: fixed;
   background-repeat: no-repeat;
   animation: breathe-gradient 16s ease-in-out infinite;
@@ -94,6 +99,25 @@ body {
   align-items: stretch;
   justify-content: center;
   padding: 20px 12px;
+}
+
+[data-theme="dark"] body {
+  background: radial-gradient(
+      900px 500px at 100% 0%,
+      var(--accent-soft) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 450px at 0% 100%,
+      var(--accent-soft) 0%,
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(5, 4, 9, 0.86) 0%,
+      rgba(5, 4, 9, 0.78) 100%
+    ),
+    url("bg.jpg") center center / cover no-repeat fixed;
 }
 
 /* Медленное "дыхание" фонового градиента — двигаем позиции обоих
